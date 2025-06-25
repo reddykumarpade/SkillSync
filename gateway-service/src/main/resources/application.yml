@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/api/auth/**
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/users/**
+        - id: project-service
+          uri: lb://project-service
+          predicates:
+            - Path=/api/projects/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://skillsync-discovery:8761/eureka/

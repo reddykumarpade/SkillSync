@@ -1,0 +1,8 @@
+com\skillsync\auth\model\LoginRequest.class
+com\skillsync\auth\model\User.class
+com\skillsync\auth\service\AuthService.class
+com\skillsync\auth\AuthServiceApplication.class
+com\skillsync\auth\repository\UserRepository.class
+com\skillsync\auth\model\RegisterRequest.class
+com\skillsync\auth\config\SecurityConfig.class
+com\skillsync\auth\controller\AuthController.class
