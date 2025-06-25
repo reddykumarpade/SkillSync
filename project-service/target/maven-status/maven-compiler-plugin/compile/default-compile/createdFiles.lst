@@ -1,0 +1,5 @@
+com\skillsync\project\model\Project.class
+com\skillsync\project\repository\ProjectRepository.class
+com\skillsync\project\service\ProjectService.class
+com\skillsync\project\controller\ProjectController.class
+com\skillsync\project\ProjectServiceApplication.class

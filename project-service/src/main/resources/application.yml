@@ -1,0 +1,23 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: project-service
+  datasource:
+    url: jdbc:postgresql://skillsync-postgres:5432/skillsync
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://skillsync-discovery:8761/eureka/
+
+logging:
+  level:
+    com.netflix.discovery: DEBUG
